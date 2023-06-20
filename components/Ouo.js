@@ -9,10 +9,10 @@ const Ouo = () => {
     {BLOG.OUO && BLOG.OUO_TOKEN && BLOG.OUO_DOMAINS && (<>
       <script type="text/javascript"
               dangerouslySetInnerHTML={{
-                  __html: `
-               var ouo_token = '${BLOG.OUO_TOKEN}';
-               var domains = [${BLOG.OUO_DOMAINS}]; 
-             `
+                __html: `
+                     var ouo_token = '${BLOG.OUO_TOKEN}';
+                     var domains = [${BLOG.OUO_DOMAINS}]; 
+                   `
               }}
       />
       <script src="//cdn.ouo.io/js/full-page-script.js" />
