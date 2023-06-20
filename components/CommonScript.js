@@ -105,19 +105,6 @@ const CommonScript = () => {
     {/* 引入音乐播放 */}
     {JSON.parse(BLOG.MUSIC_PLAYER) && <script async src={BLOG.MUSIC_PLAYER_CDN_URL} />}
     {JSON.parse(BLOG.MUSIC_PLAYER) && JSON.parse(BLOG.MUSIC_PLAYER_METING) && <script async src="https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js" />}
-
-    {/* 引入OUO */}
-    {BLOG.OUO && BLOG.OUO_TOKEN && BLOG.OUO_DOMAINS && (<>
-      <script type="text/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `
-                     var ouo_token = '${BLOG.OUO_TOKEN}';
-                     var domains = [${BLOG.OUO_DOMAINS}]; 
-                   `
-              }}
-      />
-      <script src="//cdn.ouo.io/js/full-page-script.js" />
-    </>)}
   </>)
 }
 

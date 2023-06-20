@@ -2,6 +2,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import BLOG from '@/blog.config'
 import CommonScript from '@/components/CommonScript'
+import Ouo from '@/components/Ouo'
 import Loading from '@/components/Loading'
 
 class MyDocument extends Document {
@@ -22,6 +23,7 @@ class MyDocument extends Document {
                     <Main />
                     <NextScript />
                 </body>
+                <Ouo />
                 <Loading />
             </Html>
     )
