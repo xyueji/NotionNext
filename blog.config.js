@@ -335,7 +335,7 @@ const BLOG = {
 
   // ouo.in
   OUO: process.env.NEXT_PUBLIC_OUO || false,// 是否开启ouo
-  OUO_TOKEN: rocess.env.NEXT_PUBLIC_OUO_TOKEN || '', // ouo_token
+  OUO_TOKEN: process.env.NEXT_PUBLIC_OUO_TOKEN || '', // ouo_token
   OUO_DOMAINS: process.env.NEXT_PUBLIC_OUO_DOMAINS || '', // domains
 
   // 开发相关
