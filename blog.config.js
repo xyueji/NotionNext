@@ -333,6 +333,11 @@ const BLOG = {
   IMG_URL_TYPE: process.env.NEXT_PUBLIC_IMG_TYPE || 'Notion', // 此配置已失效，请勿使用；AMAZON方案不再支持，仅支持Notion方案。 ['Notion','AMAZON'] 站点图片前缀 默认 Notion:(https://notion.so/images/xx) ， AMAZON(https://s3.us-west-2.amazonaws.com/xxx)
   IMG_SHADOW: process.env.NEXT_PUBLIC_IMG_SHADOW || false, // 文章图片是否自动添加阴影
 
+  // ouo.in
+  OUO: process.env.NEXT_PUBLIC_OUO || false,// 是否开启ouo
+  OUO_TOKEN: rocess.env.NEXT_PUBLIC_OUO_TOKEN || '', // ouo_token
+  OUO_DOMAINS: process.env.NEXT_PUBLIC_OUO_DOMAINS || '', // domains
+
   // 开发相关
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
