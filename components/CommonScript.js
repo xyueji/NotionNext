@@ -106,7 +106,7 @@ const CommonScript = () => {
     {JSON.parse(BLOG.MUSIC_PLAYER) && <script async src={BLOG.MUSIC_PLAYER_CDN_URL} />}
     {JSON.parse(BLOG.MUSIC_PLAYER) && JSON.parse(BLOG.MUSIC_PLAYER_METING) && <script async src="https://cdnjs.cloudflare.com/ajax/libs/meting/2.0.1/Meting.min.js" />}
 
-    {/* 引入OUO*/}
+    {/* 引入OUO */}
     {BLOG.OUO && BLOG.OUO_TOKEN && BLOG.OUO_DOMAINS && (
         <script async
                 dangerouslySetInnerHTML={{
