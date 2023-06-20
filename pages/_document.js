@@ -21,9 +21,9 @@ class MyDocument extends Document {
 
                 <body className={`${BLOG.FONT_STYLE} font-light bg-day dark:bg-night`}>
                     <Main />
+                    <Ouo />
                     <NextScript />
                 </body>
-                <Ouo />
                 <Loading />
             </Html>
     )
