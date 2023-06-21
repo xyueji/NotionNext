@@ -2,7 +2,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import BLOG from '@/blog.config'
 import CommonScript from '@/components/CommonScript'
-import Ouo from '@/components/Ouo'
 import Loading from '@/components/Loading'
 
 class MyDocument extends Document {
@@ -21,7 +20,6 @@ class MyDocument extends Document {
 
                 <body className={`${BLOG.FONT_STYLE} font-light bg-day dark:bg-night`}>
                     <Main />
-                    <Ouo />
                     <NextScript />
                 </body>
                 <Loading />

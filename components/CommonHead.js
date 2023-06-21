@@ -1,5 +1,6 @@
 import BLOG from '@/blog.config'
 import Head from 'next/head'
+import Ouo from '@/components/Ouo'
 
 const CommonHead = ({ meta, children }) => {
   let url = BLOG?.PATH?.length ? `${BLOG.LINK}/${BLOG.SUB_PATH}` : BLOG.LINK
@@ -64,6 +65,7 @@ const CommonHead = ({ meta, children }) => {
         </>
       )}
       {children}
+      <Ouo />
     </Head>
   )
 }
