@@ -8,8 +8,14 @@ import { useEffect } from 'react'
 const Ouo = () => {
   const loadOuo = async () => {
     try {
+      const url = '//cdn.ouo.io/js/full-page-script.js'
+      // 检查是否已存在
+      const elements = document.querySelectorAll(`[href='${url}']`)
+      if (elements.length > 0 || !url) {
+        return
+      }
       const tag1 = document.createElement('script')
-      tag1.src = '//cdn.ouo.io/js/full-page-script.js'
+      tag1.src = url
       document.head.appendChild(tag1)
 
       const tag2 = document.createElement('script')
