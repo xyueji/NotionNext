@@ -1,5 +1,5 @@
 import BLOG from '@/blog.config'
-import {useEffect} from "@types/react";
+import { useEffect } from 'react'
 
 /**
  * 添加ouo
