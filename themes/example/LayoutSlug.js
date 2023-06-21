@@ -4,6 +4,7 @@ import NotionPage from '@/components/NotionPage'
 import { ArticleInfo } from './components/ArticleInfo'
 import Comment from '@/components/Comment'
 import ShareBar from '@/components/ShareBar'
+import Ouo from "@/components/Ouo"
 
 export const LayoutSlug = props => {
   const { post, lock, validPassword } = props
@@ -19,6 +20,7 @@ export const LayoutSlug = props => {
 
                 {!lock && <div id="notion-article" className="px-2">
                     {post && <>
+                        <Ouo />
                         <ArticleInfo post={post} />
                         <NotionPage post={post} />
                         <ShareBar post={post} />

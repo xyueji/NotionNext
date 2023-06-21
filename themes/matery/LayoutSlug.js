@@ -12,6 +12,7 @@ import JumpToCommentButton from './components/JumpToCommentButton'
 import throttle from 'lodash.throttle'
 import ShareBar from '@/components/ShareBar'
 import Announcement from './components/Announcement'
+import Ouo from "@/components/Ouo"
 
 export const LayoutSlug = props => {
   const { post, lock, validPassword } = props
@@ -69,6 +70,8 @@ export const LayoutSlug = props => {
 
                     <div className='lg:px-10 subpixel-antialiased'>
                         <article itemScope >
+                            {/* ouo */}
+                            <Ouo />
                             {/* Notion文章主体 */}
                             <section id='notion-article' className='justify-center mx-auto max-w-2xl lg:max-w-full'>
                                 {post && <NotionPage post={post} />}

@@ -12,6 +12,7 @@ import ArticleCopyright from './components/ArticleCopyright'
 import ArticleRecommend from './components/ArticleRecommend'
 import { isBrowser } from '@/lib/utils'
 import ShareBar from '@/components/ShareBar'
+import Ouo from "@/components/Ouo";
 
 export const LayoutSlug = props => {
   const { post, lock, validPassword } = props
@@ -52,6 +53,8 @@ export const LayoutSlug = props => {
 
         {!lock && <div id="container" className="overflow-x-auto flex-grow mx-auto md:w-full md:px-5 ">
 
+          {/* ouo */}
+          <Ouo />
           <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden" >
             {/* Notion文章主体 */}
             <section id='notion-article' className='px-5 justify-center mx-auto max-w-2xl lg:max-w-full'>

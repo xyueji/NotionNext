@@ -14,6 +14,7 @@ import TocDrawer from './components/TocDrawer'
 import CategoryItem from './components/CategoryItem'
 import TagItemMini from './components/TagItemMini'
 import ShareBar from '@/components/ShareBar'
+import Ouo from "@/components/Ouo"
 
 export const LayoutSlug = props => {
   const { post, prev, next, siteInfo, lock, validPassword } = props
@@ -66,6 +67,9 @@ export const LayoutSlug = props => {
                         </div>
                     </Link>
                 </section>
+
+                {/* ouo */}
+                <Ouo />
 
                 {/* Notion文章主体 */}
                 <section id="notion-article" className="px-1 max-w-4xl">

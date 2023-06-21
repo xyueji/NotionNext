@@ -6,6 +6,7 @@ import formatDate from '@/lib/formatDate'
 import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
 import ArticleAround from './ArticleAround'
+import Ouo from "@/components/Ouo"
 
 /**
  *
@@ -31,6 +32,8 @@ export default function ArticleDetail(props) {
       <article itemScope itemType="https://schema.org/Movie"
         className="subpixel-antialiased overflow-y-hidden py-10 px-5 lg:pt-24 md:px-32  dark:border-gray-700 bg-white dark:bg-hexo-black-gray"
       >
+        {/* ouo */}
+        <Ouo />
 
         <header className='animate__slideInDown animate__animated'>
 

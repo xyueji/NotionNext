@@ -13,6 +13,8 @@ import WordCount from './WordCount'
 import NotionPage from '@/components/NotionPage'
 import CONFIG_NEXT from '../config_next'
 import NotionIcon from '@/components/NotionIcon'
+import Ouo from "@/components/Ouo";
+import React from "@types/react";
 
 /**
  *
@@ -77,6 +79,9 @@ export default function ArticleDetail(props) {
                     </section>
 
                 </header>}
+
+                {/* ouo */}
+                <Ouo />
 
                 {/* Notion内容主体 */}
                 <article id='notion-article' className='px-1 max-w-3xl mx-auto'>
