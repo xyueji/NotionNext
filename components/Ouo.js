@@ -8,12 +8,12 @@ import {useEffect} from "@types/react";
 const Ouo = () => {
   const loadOuo = async () => {
     try {
-      let tag1 = document.createElement('script')
+      const tag1 = document.createElement('script')
       tag1.src = '//cdn.ouo.io/js/full-page-script.js'
       document.head.appendChild(tag1)
 
-      let tag2 = document.createElement('script')
-      tag2.type= 'text/javascript'
+      const tag2 = document.createElement('script')
+      tag2.type = 'text/javascript'
       tag2.text = `
                      var ouo_token = '${BLOG.OUO_TOKEN}';
                      var domains = [${BLOG.OUO_DOMAINS}]; 
