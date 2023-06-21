@@ -6,7 +6,6 @@ import Comment from '@/components/Comment'
 import ArticleAround from './components/ArticleAround'
 import ShareBar from '@/components/ShareBar'
 import Ouo from "@/components/Ouo"
-import React from "@types/react"
 
 export const LayoutSlug = props => {
   const { post, lock, validPassword, prev, next } = props
