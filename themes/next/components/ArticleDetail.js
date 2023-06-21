@@ -13,8 +13,7 @@ import WordCount from './WordCount'
 import NotionPage from '@/components/NotionPage'
 import CONFIG_NEXT from '../config_next'
 import NotionIcon from '@/components/NotionIcon'
-import Ouo from "@/components/Ouo";
-import React from "@types/react";
+import Ouo from "@/components/Ouo"
 
 /**
  *
