@@ -79,9 +79,6 @@ export default function ArticleDetail(props) {
 
                 </header>}
 
-                {/* ouo */}
-                <Ouo />
-
                 {/* Notion内容主体 */}
                 <article id='notion-article' className='px-1 max-w-3xl mx-auto'>
                     {post && (<NotionPage post={post} />)}
@@ -143,6 +140,8 @@ export default function ArticleDetail(props) {
                 <div className="duration-200 w-full dark:border-gray-700 bg-white dark:bg-hexo-black-gray">
                     <Comment frontMatter={post} />
                 </div>
+                {/* ouo */}
+                <Ouo />
             </div>
 
         </div>

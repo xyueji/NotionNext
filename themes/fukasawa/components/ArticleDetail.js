@@ -32,9 +32,6 @@ export default function ArticleDetail(props) {
       <article itemScope itemType="https://schema.org/Movie"
         className="subpixel-antialiased overflow-y-hidden py-10 px-5 lg:pt-24 md:px-32  dark:border-gray-700 bg-white dark:bg-hexo-black-gray"
       >
-        {/* ouo */}
-        <Ouo />
-
         <header className='animate__slideInDown animate__animated'>
 
           {/* 文章Title */}
@@ -117,6 +114,8 @@ export default function ArticleDetail(props) {
       <div className="duration-200 shadow px-12 w-screen md:w-full overflow-x-auto dark:border-gray-700 bg-white dark:bg-hexo-black-gray">
         <Comment frontMatter={post} />
       </div>
+      {/* ouo */}
+      <Ouo />
     </div>
   )
 }

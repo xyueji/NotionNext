@@ -68,9 +68,6 @@ export const LayoutSlug = props => {
                     </Link>
                 </section>
 
-                {/* ouo */}
-                <Ouo />
-
                 {/* Notion文章主体 */}
                 <section id="notion-article" className="px-1 max-w-4xl">
                     {post && (<NotionPage post={post} />)}
@@ -103,6 +100,8 @@ export const LayoutSlug = props => {
 
                     {post.type === 'Post' && <ArticleAround prev={prev} next={next} />}
                     <Comment frontMatter={post} />
+                    {/* ouo */}
+                    <Ouo />
                 </section>
 
                 <TocDrawer {...props} />

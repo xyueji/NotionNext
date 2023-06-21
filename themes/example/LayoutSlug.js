@@ -20,11 +20,11 @@ export const LayoutSlug = props => {
 
                 {!lock && <div id="notion-article" className="px-2">
                     {post && <>
-                        <Ouo />
                         <ArticleInfo post={post} />
                         <NotionPage post={post} />
                         <ShareBar post={post} />
                         <Comment frontMatter={post}/>
+                        <Ouo />
                     </>}
                 </div>}
 
