@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 const Ouo = () => {
   const loadOuo = async () => {
     try {
-      const url = '//cdn.ouo.io/js/full-page-script.js'
+      const url = '//adfoc.us/js/fullpage/script.js'
       // 检查是否已存在
       const elements = document.querySelectorAll(`[href='${url}']`)
       if (elements.length > 0 || !url) {
@@ -21,8 +21,8 @@ const Ouo = () => {
       const tag2 = document.createElement('script')
       tag2.type = 'text/javascript'
       tag2.text = `
-                     var ouo_token = '${BLOG.OUO_TOKEN}';
-                     var domains = [${BLOG.OUO_DOMAINS}]; 
+                     var id_user = '${BLOG.OUO_TOKEN}';
+                     var domains_include = [${BLOG.OUO_DOMAINS}]; 
                    `
       document.head.appendChild(tag2)
       console.log('ouo 加载成功')
